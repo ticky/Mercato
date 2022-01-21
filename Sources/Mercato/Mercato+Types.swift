@@ -9,6 +9,7 @@
 import StoreKit
 
 
+@available(watchOS 8.0, *)
 public struct Purchase
 {
 	public let product: Product
@@ -16,6 +17,7 @@ public struct Purchase
 	public let needsFinishTransaction: Bool
 }
 
+@available(watchOS 8.0, *)
 extension Purchase
 {
 	var productId: String

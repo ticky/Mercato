@@ -1,8 +1,10 @@
 import Foundation
 import StoreKit
 
+@available(watchOS 8.0, *)
 public typealias TransactionUpdate = ((Transaction) async -> ())
 
+@available(watchOS 8.0, *)
 public class Mercato {
 	
 	private var purchaseController = PurchaseController()
@@ -56,6 +58,7 @@ public class Mercato {
 	}
 }
 
+@available(watchOS 8.0, *)
 extension Mercato
 {
 	fileprivate static let shared: Mercato = .init()
@@ -112,7 +115,7 @@ extension Mercato
 	}
 }
 
-
+@available(watchOS 8.0, *)
 func checkVerified<T>(_ result: VerificationResult<T>) throws -> T
 {
 	switch result

@@ -8,6 +8,7 @@
 import Foundation
 import StoreKit
 
+@available(watchOS 8.0, *)
 class ProductService
 {
 
@@ -47,6 +48,7 @@ class ProductService
 	}
 }
 
+@available(watchOS 8.0, *)
 private extension ProductService
 {
     func checkProductIdsMatchingCachedIds(_ productIds: Set<String>) -> Bool {

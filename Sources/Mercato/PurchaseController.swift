@@ -8,6 +8,7 @@
 import Foundation
 import StoreKit
 
+@available(watchOS 8.0, *)
 class PurchaseController
 {
 	func makePurchase(product: Product, quantity: Int = 1, finishAutomatically: Bool = true, appAccountToken: UUID? = nil, simulatesAskToBuyInSandbox: Bool = false) async throws -> Purchase

@@ -8,6 +8,7 @@
 import Foundation
 import StoreKit
 
+@available(watchOS 8.0, *)
 public enum MercatoError: Error
 {
 	case storeKit(error: StoreKitError)

@@ -8,8 +8,10 @@
 import Foundation
 import StoreKit
 
+@available(watchOS 8.0, *)
 typealias RenewalState = Product.SubscriptionInfo.RenewalState
 
+@available(watchOS 8.0, *)
 public extension Product
 {
 	var isEligibleForIntroOffer: Bool
